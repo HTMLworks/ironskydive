@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-bar {
+  background-color: rgb(25, 33, 41);
+  padding: 15px 0;
+}
+
+.nav-bar-item {
+  font-size: 1.4em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar-item a {
+  color: rgb(248, 248, 255);
+}
+
+.header {
+  padding-top: 80px;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg);
+  position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+}
+.header-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-subtitle {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(248, 248, 255);
+  line-height: 3em;
+  text-shadow: #020819 8px -20px 9px;
+}
+.quote {
+  position: absolute;
+  margin-left: 10%;
+  padding-top: 10%;
+}
+.main {
+  background-color: #192129;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-article {
+  color: rgb(248, 248, 255);
+  text-align: center;
+  padding: 50px;
+  display: grid;
+}
+.article-title,
+.team-title,
+.footer-title {
+  font-weight: 900;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+.article-text,
+.team-text {
+  font-weight: 100;
+  margin-bottom: 30px;
+  line-height: 2em;
+}
+.article-link {
+  background-color: rgb(67, 163, 230);
+  color: rgb(248, 248, 255);
+  padding: 10px;
+  font-family: Roboto Condensed;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.section-structure {
+  color: rgb(25, 33, 41);
+}
+.structure-title,
+.schedule-title,
+.form-title {
+  font-weight: 900;
+  font-size: 2em;
+  margin: 50px 0;
+  text-align: center;
+}
+.service-box {
+  border: 5px solid #eeeeee;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+}
+.service-box img {
+  width: 100px;
+  height: 100px;
+}
+.structure-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+hr {
+  margin: 0 auto 30px auto;
+  width: 40%;
+}
+.section-team,
+.footer {
+  background-color: rgb(25, 33, 41);
+  color: rgb(248, 248, 255);
+}
+
+.team-head {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.team-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-box {
+  text-align: center;
+  padding: 30px;
+}
+
+.team-box img {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+.section-schedule {
+  justify-content: center;
+  display: grid;
+}
+.table,
+.form {
+  justify-content: center;
+  text-align: center;
+}
+td,
+th {
+  border-bottom: 2px solid rgb(25, 33, 41);
+  padding: 10px;
+}
+form {
+  display: grid;
+}
+form input,
+form label {
+  padding: 10px 0;
+  margin: 5px 0;
+}
+.footer {
+  margin-top: 60px;
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-around;
+}
+.footer-section {
+  text-align: center;
+}
+.footer-section li {
+  margin-top: 10px;
+}
+.footer-section a {
+  color: rgb(67, 163, 230);
+}
+.footer-redes {
+  margin-top: 20px;
+}
+
+.footer img {
+  height: 350px;
+  width: 700px;
+}
