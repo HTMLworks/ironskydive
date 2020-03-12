@@ -6,13 +6,14 @@
   text-decoration: none;
 }
 
+/*  RESPONSIVE  mobile first ================================ */
+
 .nav-bar {
   background-color: rgb(25, 33, 41);
   padding: 15px 0;
 }
 
 .nav-bar-item {
-  font-size: 1.4em;
   display: flex;
   justify-content: space-evenly;
 }
@@ -31,7 +32,7 @@
   position: relative;
 }
 .header-title {
-  font-size: 5em;
+  font-size: 2em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -39,7 +40,7 @@
   font-size: 3em;
   text-transform: uppercase;
   text-align: center;
-  color: rgb(248, 248, 255);
+  color: rgb(255, 255, 255);
   line-height: 3em;
   text-shadow: #020819 8px -20px 9px;
 }
@@ -50,14 +51,11 @@
 }
 .main {
   background-color: #192129;
-  display: flex;
-  justify-content: space-evenly;
 }
 .main-article {
   color: rgb(248, 248, 255);
   text-align: center;
   padding: 50px;
-  display: grid;
 }
 .article-title,
 .team-title,
@@ -75,7 +73,7 @@
 .article-link {
   background-color: rgb(67, 163, 230);
   color: rgb(248, 248, 255);
-  padding: 10px;
+  padding: 20px;
   font-family: Roboto Condensed;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -96,6 +94,7 @@
   border: 5px solid #eeeeee;
   border-radius: 20px;
   text-align: center;
+  margin-bottom: 40px;
   padding: 30px;
 }
 .service-box img {
@@ -103,8 +102,6 @@
   height: 100px;
 }
 .structure-cards {
-  display: flex;
-  justify-content: space-around;
   margin: 50px;
 }
 hr {
@@ -123,7 +120,6 @@ hr {
 }
 
 .team-body {
-  display: flex;
   justify-content: space-evenly;
 }
 
@@ -139,13 +135,15 @@ hr {
 }
 
 .section-schedule {
-  justify-content: center;
-  display: grid;
+  padding: 20px;
 }
 .table,
 .form {
   justify-content: center;
   text-align: center;
+}
+.table {
+  display: none;
 }
 td,
 th {
@@ -155,15 +153,18 @@ th {
 form {
   display: grid;
 }
+form input {
+  border: 2px solid rgba(25, 33, 41, 0.425);
+}
 form input,
 form label {
-  padding: 10px 0;
+  padding: 10px 10px;
   margin: 5px 0;
 }
 .footer {
   margin-top: 60px;
   display: flex;
-  padding: 25px 0;
+  padding: 25px;
   justify-content: space-around;
 }
 .footer-section {
@@ -178,8 +179,47 @@ form label {
 .footer-redes {
   margin-top: 20px;
 }
-
+.footer-img {
+  margin-top: 20px;
+  text-align: center;
+}
 .footer img {
-  height: 350px;
-  width: 700px;
+  display: none;
+}
+/*  RESPONSIVE desktop    @media   ================================ */
+
+@media only screen and (min-width: 767px) {
+  .nav-bar-item {
+    font-size: 2em;
+  }
+  .quote {
+    font-size: 2em;
+  }
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-article {
+    display: grid;
+  }
+  .structure-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .team-body {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .section-schedule {
+    justify-content: center;
+    display: grid;
+  }
+  .table {
+    display: inherit;
+  }
+  .footer img {
+    height: 380px;
+    width: 800px;
+    display: inherit;
+  }
 }
